@@ -1,0 +1,318 @@
+@import "compass/css3";
+
+*{
+	box-sizing: border-box;
+}
+
+.section1{
+	background-color: white;
+}
+
+.section2{
+	background-color: lightgray;
+	padding-top: 20px;
+	margin: 0;
+}
+
+.navigation{
+	list-style: none;
+	margin: 0;
+	background: black;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: center;
+}
+
+.navigation a{
+	text-decoration: none;
+	display: block;
+	padding: .5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	color: white;
+	border: none;
+}
+
+.navigation a:hover{
+	/*background: lighten(black, 90%);*/
+	/*box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);*/
+	filter: brightness(50%);
+}
+
+.products{
+	list-style: none;
+	margin: 0;
+	height: 100px;
+	background: lightgray;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: center;
+}
+
+.products a{
+	text-decoration: none;
+	font-size: 15px;
+	margin-top: 10px;
+	/*height: 100px;*/
+	display: block;
+	padding: .5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	color: black;
+	border: none;
+}
+
+.products a:hover{
+	/*background: lighten(black, 90%);*/
+	/*box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);*/
+	color: blue;
+}
+
+.ad1{
+	list-style: none;
+	margin-top: 5px;
+	height: 200px;
+	width: 100%;
+	background: lightgray;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: column wrap;
+	justify-content: center;
+}
+
+.ad1 p{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: .5em;
+	color: black;
+	border: none;
+}
+
+h1{
+	font-size: 50px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+h2{
+	font-size: 25px;
+	margin-top: 75px;
+	text-align: center;
+}
+
+h3{
+	font-size: 50px;
+	margin-top: 10px;
+	text-align: left;
+}
+
+h4{
+	font-size: 25px;
+	margin-top: 20px;
+	padding-left: 10px;
+	text-align: left;
+}
+
+
+/*
+p{
+	border: 1px solid blue;
+	background-color: #002A2A;
+	width: 90%;
+	height: 150px;
+	margin: auto;
+	font-family: Helvetica;
+	color: white;
+	text-align: right;
+	padding: 7px;
+}*/
+
+/*
+a{
+	border: 1px solid white;
+	font-family: Helvetica;
+	color: white;
+	text-align: right;
+	font-size: 20px;
+}
+
+a.inside{
+	border: 0px;
+	color: white;
+	text-align: right;
+	font-size: 15px;
+	padding: 3px;
+}*/
+
+.row{
+	width: 95%;
+	padding: 20px 0;
+	margin: auto;
+	overflow: hidden;
+}
+
+/*For the first section 2*/
+.row2{
+	width: 85%;
+	padding: 20px;
+	background-color: white;
+	margin: auto;
+	overflow: hidden;
+}
+
+/*For the second section 2*/		/*How do I make these two white backgrounds align?*/
+.row3{
+	width: 90%;
+	padding: 20px;
+	background-color: none;
+	margin: auto;
+	overflow: hidden;
+}
+
+.row4{
+	width: 100%;
+	padding: 20px;
+	background-image: URL('http://hdwpro.com/wp-content/uploads/2016/02/Natural-iPhone-Wallpaper.jpeg');
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+
+a.learn{
+	padding: 10px;
+	font-size: 15px;
+	font-color: black;
+}
+
+/** Browser devices **/
+@media (min-width: 992px){
+
+	.col-left{
+		width: calc(25% - 10px);
+		float: left;
+		padding: 10px;
+		/*border: 1px solid gray;*/
+		text-align: center;
+		margin-left: 5px;
+	}
+
+	.col-left:first-child{
+		margin:0;
+	}
+
+	.col-left2{
+		width: calc(25% - 10px);
+		float: left;
+		padding: 0;
+		/*border: 1px solid red;*/
+		text-align: right;
+		margin-left: 5px;
+	}
+
+	.col-left2:first-child{
+		margin:0;
+	}
+
+	.col-right{
+		width: calc(25% - 10px);
+		float: left;
+		padding: 10px;
+		/*border: 1px solid blue;*/
+		text-align: left;
+		margin-left: 5px;
+	}
+
+	.col-right:first-child{
+		margin:0;
+	}
+
+	.col-half{
+		width: calc(50% - 15px);
+		float: left;
+		text-align: center;
+		margin: auto;
+	}
+
+	.col-half2{
+		width: calc(50% - 15px);
+		height: auto;				/* How do I make these two columns the same height without jeopardizing scale of image?*/
+		float: left;
+		text-align: center;
+		background-color: white;
+		/*border: 1px solid black;*/
+		padding: 50px;
+		padding-bottom: 0px;
+		margin: 5px;
+	}
+
+	.col-full{
+		width: 100%;
+		height: 500px;
+		overflow: hidden;
+		/*background-image: URL('http://hdwpro.com/wp-content/uploads/2016/02/Natural-iPhone-Wallpaper.jpeg');*/
+		background-image: URL('https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2016/12/iphone-7-jet-black-on-wood.jpeg?itok=GwcpsZF4');
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Tablet devices **/
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md{
+		width: (50% - 20px);
+		float: left;
+		padding: 20px;
+		border: 1px solid red;
+		text-align: center;
+		margin-left: 5px;
+		margin-bottom: 5px;
+	}
+	.customthird{
+		width: (100% - 20px);
+		padding: 20px;
+		border: 1px solid red;
+	}
+}
+
+/** Mobile devices **/
+@media (max-width: 767px){
+	.col-xs-4{
+		float: left;
+		padding: 20px;
+		border: 1px solid purple;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+}
